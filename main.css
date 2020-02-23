@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+header, article, aside, footer {
+	width: 100%;
+}
+
+/*article {
+	width: 60%;
+}*/
