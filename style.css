@@ -37,14 +37,11 @@ figure {
 	border: 2px solid hotpink;
 }
 
-img {
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-
-svg {
-	background-color: inherit;
+.main-icon {
+	height: 1000px;
+	width: 1000px;
+	color: pink;
+	fill: blue;
 	font-family: 'Galvji';
 	font-size: 168.3172px;
 }
