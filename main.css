@@ -4,3 +4,21 @@ nav ul {
 	flex-wrap: nowrap;
 	justify-content: center;
 }
+
+#idx-about {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+#idx-contact {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+#fries-2 {
+	order: -1;
+}

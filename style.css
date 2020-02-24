@@ -9,6 +9,11 @@ body {
 	border: 2px solid green;
 }
 
+main {
+	/* Debug */
+	border: 2px solid purple;
+}
+
 nav ul {
 	list-style: none;
 	padding: 2rem;
@@ -44,4 +49,17 @@ figure {
 	fill: blue;
 	font-family: 'Galvji';
 	font-size: 168.3172px;
+}
+
+article {
+	margin: 4rem;
+}
+
+#fries-1, #fries-2 {
+	max-width: 50vw;
+	/* max-height: 100vw; */
+	/* width: ; */
+	object-fit: scale-down;
+	/* Debug */
+	border: 5px groove yellow;
 }
