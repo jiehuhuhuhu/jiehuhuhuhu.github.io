@@ -42,10 +42,10 @@ figure {
 	border: 2px solid hotpink;
 }
 
-.main-icon {
-	height: 1000px;
-	width: 1000px;
-	color: pink;
+#main-icon {
+	height: 350px;
+	width: 350px;
+	/* color: pink; */
 	fill: blue;
 	font-family: 'Galvji';
 	font-size: 168.3172px;
