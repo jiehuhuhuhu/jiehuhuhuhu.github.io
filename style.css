@@ -4,21 +4,9 @@
 	margin: 0;
 }
 
-body {
-	/* Debug */
-	border: 2px solid green;
-}
-
-main {
-	/* Debug */
-	border: 2px solid purple;
-}
-
 nav ul {
 	list-style: none;
 	padding: 2rem;
-	/* Debug */
-	border: 2px solid hotpink;
 }
 
 nav ul li {
@@ -38,14 +26,11 @@ figure {
 	padding: 2rem;
 	display: flex;
 	justify-content: center;
-	/* Debug */
-	border: 2px solid hotpink;
 }
 
 #main-icon {
 	height: 350px;
 	width: 350px;
-	/* color: pink; */
 	fill: blue;
 	font-family: 'Galvji';
 	font-size: 168.3172px;
@@ -57,9 +42,5 @@ article {
 
 #fries-1, #fries-2 {
 	max-width: 50vw;
-	/* max-height: 100vw; */
-	/* width: ; */
 	object-fit: scale-down;
-	/* Debug */
-	border: 5px groove yellow;
 }
