@@ -1,16 +1,6 @@
-* {
-	box-sizing: border-box;
-}
-
-body {
+nav ul {
 	display: flex;
-	flex-flow: row wrap;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
 }
-
-header, article, aside, footer {
-	width: 100%;
-}
-
-/*article {
-	width: 60%;
-}*/
