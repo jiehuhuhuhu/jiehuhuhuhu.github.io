@@ -5,17 +5,26 @@
 	<!-- <link rel="stylesheet" href="mcleod-reset.css"> -->
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="contact-css.css"
 </head>
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
 <body>
-	<nav>
-		<ul>
-	    <li><a href="index.html">Home</a></li>
-	    <li><a href="about.html">About</a></li>
-	    <li><a href="contact.html">Contact</a></li>
-	  </ul>
-	</nav>
-	<main>
-		<h1>Contact</h1>
-	</main>
+	<form action="dunno" method="post">
+		<label for="name">Name</label>
+		<input type="text" name="name">
+		<label for="email">Email Address</label>
+		<input type="email" name="email">
+		<label for="subject">Subject</label>
+		<input type="text" name="subject">
+		<label for="message">Message</label>
+		<textarea rows="5"></textarea>
+		<input type="submit" id="submitButton">
+	</form>
 </body>
 </html>
