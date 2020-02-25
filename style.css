@@ -41,11 +41,12 @@ figure {
 	font-size: 168.3172px;
 }
 
-article {
-	margin: 6rem;
-}
-
 #fries-1, #fries-2 {
 	max-width: 50vw;
-	object-fit: scale-down;
+	padding: 5rem;
+}
+
+/* Debug */
+article {
+	border: 2px solid pink;
 }

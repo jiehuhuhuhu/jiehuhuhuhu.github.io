@@ -5,20 +5,19 @@ nav ul {
 	justify-content: center;
 }
 
-#idx-about {
-	display: flex;
-	justify-content: space-around;
-	flex-flow: row nowrap;
+main {
+	display: grid;
+	grid-row-gap: 3rem;
+	grid-template-columns: [col1] 1fr [col2] 1fr;
+	grid-template-rows: [row1] auto [row2] auto;
 	align-items: center;
+	justify-items: center;
 }
 
-#idx-contact {
-	display: flex;
-	justify-content: space-around;
-	flex-flow: row nowrap;
-	align-items: center;
-}
-
-#fries-2 {
+#idx-about-txt {
 	order: -1;
+}
+
+#idx-contact-txt {
+	order: 1;
 }
