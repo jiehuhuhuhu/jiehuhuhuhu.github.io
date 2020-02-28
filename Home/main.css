@@ -14,3 +14,39 @@ main {
 #idx-contact-txt {
 	order: 1;
 }
+
+#menuIconBlack, #show-menu {
+	visibility: visible;
+	opacity: 1;
+}
+
+#menuIconWhite {
+	opacity: 0;
+  visibility: hidden;
+}
+
+#menu-bar {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#menu-page {
+	visibility: 0;
+	opacity: 0;
+}
+
+/* Toggle */
+input[type="checkbox"]:checked + label #menuIconBlack {
+	opacity: 0;
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked + label #menuIconWhite {
+  opacity: 1;
+  visibility: visible;
+}
+
+input[type="checkbox"]:checked ~ #menu-page {
+  opacity: 1;
+  visibility: visible;
+}

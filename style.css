@@ -1,3 +1,4 @@
+/* Setup */
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -5,19 +6,6 @@
 	border: 0;
 	vertical-align: baseline;
 	font-size: 12pt;
-}
-
-nav ul {
-	list-style: none;
-	padding: 2rem;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-}
-
-nav ul li {
-	padding: 0 1rem;
 }
 
 h3 {
@@ -40,6 +28,51 @@ figure {
 	justify-content: center;
 }
 
+/* Menu bar */
+#menu-bar {
+	list-style: none;
+	padding: 2rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+#menu-bar li {
+	padding: 0 1rem;
+}
+
+/* Menu page */
+#menu-page {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+	background-color: black;
+	color: white;
+	font-size: 3rem;
+}
+
+/* checkbox disable tick */
+input[type="checkbox"] {
+    display: none;
+}
+
+#menuIconBlack, #menuIconWhite {
+	position: fixed;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  margin-top: 5px;
+  z-index: 2;
+}
+
+/* Main Icon */
 #main-icon {
 	height: 350px;
 	width: 350px;
@@ -48,7 +81,17 @@ figure {
 	font-size: 168.3172px;
 }
 
+/* Image */
 #fries-1, #fries-2 {
 	max-width: 50vw;
 	padding: 5rem;
+}
+
+/* Transition */
+#menuIconBlack, #menuIconWhite, #menu-bar, #menu-page {
+	transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+body, figure {
+	transition: opacity 0.3s ease-in-out;
 }
