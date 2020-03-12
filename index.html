@@ -3,44 +3,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="mq-600-plus.css" media="screen and (min-width: 600px)">
+  <script type="text/javascript" src="index.js"></script>
 </head>
-<nav>
-	<input type="checkbox" id="show-menu">
-	<label for="show-menu">
-		<img src="Resources/Menu_Icon_Black.png" id="menuIconBlack">
-		<img src="Resources/Menu_Icon_White.png" id="menuIconWhite">
-	</label>
-
-	<div id="menu-page">
-		<h1><a href="index.html">Home</a></h1>
-		<h1><a href="Contact/contact.html">Contact</a></h1>
-	</div>
-
-	<ul id="menu-bar">
-		<li><a href="index.html">Home</a></li>
-		<li><a href="Contact/contact.html">Contact</a></li>
-	</ul>
-</nav>
-<figure>
-	<svg id="main-icon">
-		<use xlink:href="Resources/icons.svg#main-icon"></use>
-	</svg>
-</figure>
-<body>
-	<main>
-			<div id="idx-about-txt">
-				<h3>We are serious<br>about fries</h3>
-				<a>Learn more about us!</a>
-			</div>
-			<img id="fries-1" src="Resources/fries-1.jpg" alt="An image of fries?">
-			<div id="idx-contact-txt">
-				<h3>If you wish<br>to know more</h3>
-				<a href="Contact/contact.html">Contact us here</a>
-			</div>
-			<img id="fries-2" src="Resources/fries-2.jpg" alt="Another image of fries with heart">
-	</main>
+<body id="div1">
+  <p>This is a paragraph</p>
+  <button type="button" onclick="init()" name="button">Click Here</button>
 </body>
 </html>
