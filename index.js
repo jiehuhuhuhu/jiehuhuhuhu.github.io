@@ -1,19 +1,19 @@
-function loadJSON(callback) {
-  var xobj = new XMLHttpRequest();
-  xobj.overrideMimeType("application/json");
-  xobj.open('GET', 'data.json', true); // Replace 'my_data' with the path to your file
-  xobj.onreadystatechange = function () {
-    if (xobj.readyState == 4 && xobj.status == "200") {
-      // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-      callback(xobj.responseText);
+function readTextFile(callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", "data.json", true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
     }
-  };
-  xobj.send(null);
- }
+    rawFile.send(null);
+}
 
- function init() {
-   loadJSON(function(response) {
-    // Parse JSON string into object
-     var actual_JSON = JSON.parse(response);
-   });
+function init() {
+  console.log("init");
+  readTextFile(function(text) {
+    var data = JSON.parse(text);
+    console.log(data);
+  });
 }
