@@ -1,5 +1,6 @@
 var setupBool = false;
 
+// Get JSON File
 function readJSONFile(callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
@@ -25,6 +26,7 @@ function createPost(data) {
     console.log(data.posts[i].text);
 
     var p = document.createElement('p');
+    p.id = 'post';
     p.innerHTML = data.posts[i].text;
     document.getElementById("posts").appendChild(p);
   }
