@@ -1,4 +1,5 @@
 var setupBool = false;
+var jsonData = null;
 
 // Get JSON File
 function readJSONFile(callback) {
@@ -17,10 +18,12 @@ function init() {
   console.log("init");
   readJSONFile(function(text) {
     var data = JSON.parse(text);
+    jsonData = data
     createPost(data);
   });
 }
 
+// functions
 function createPost(data) {
   for(let i = 0; i < data.posts.length; i++) {
     console.log(data.posts[i].text);
@@ -30,6 +33,16 @@ function createPost(data) {
     p.innerHTML = data.posts[i].text;
     document.getElementById("posts").appendChild(p);
   }
+}
+
+function savePost(text) {
+  console.log("jsonData");
+  jsonData["posts"].push({"text": `${text}`});
+  console.log(jsonData);
+  $.post( "/data.json", function( jsonData ) {
+    $( ".result" ).html( jsonData );
+  });
+
 }
 
 // initial setup

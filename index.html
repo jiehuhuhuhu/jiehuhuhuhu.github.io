@@ -4,12 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="main.css">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
   <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
+	<p>hello?</p>
 	<textarea id="inputText" multi-line="true" rows="15"></textarea>
 
-	<button onclick="">Create Post</button>
+	<button onclick="savePost(inputText.value)">Create Post</button>
 
 	<section id="posts"></section>
 </body>
